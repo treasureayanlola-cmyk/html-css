@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Teetee tote bags</title>
+    <style>
+        /* Minimal Styling for Contact Page - Move to your CSS file! */
+        body { font-family: 'Avenir', Arial, sans-serif; background-color: aliceblue; color:black; margin: 0; padding: 0; }
+        .container { width: 90%; max-width: 1000px; margin: 40px auto; padding: 20px; display: flex; flex-wrap: wrap; gap: 40px; }
+        h1 { text-align: center; width: 100%; color: black; margin-bottom: 20px; }
+        h2 { color: black; border-bottom: 1px solid black; padding-bottom: 5px; margin-top: 0; }
+
+        .contact-form-section { flex: 2; min-width: 300px; padding: 25px; background: aliceblue; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); }
+        .contact-info-section { flex: 1; min-width: 250px; padding: 25px; background: aliceblue; border-radius: 8px; }
+
+        /* Form Styling */
+        .contact-form-section form { display: flex; flex-direction: column; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; font-size: 0.9em; color:black; }
+        input[type="text"], input[type="email"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 4px;
+            box-sizing: border-box; /* Important for padding/width calculation */
+        }
+        textarea { resize: vertical; height: 120px; }
+        .submit-button { 
+            background-color: aliceblue; 
+            color:whitesmoke; 
+            padding: 12px 20px; 
+            border: none; 
+            border-radius: 4px; 
+            cursor: pointer; 
+            font-size: 1.1em; 
+            margin-top: 10px; 
+            transition: background-color 0.3s;
+        }
+        .submit-button:hover { background-color: black; }
+
+        /* Info Styling */
+        .info-item { margin-bottom: 25px; }
+        .info-item strong { display: block; margin-bottom: 5px; color:black; }
+        .info-item a { color: black; text-decoration: none; }
+        .info-item a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <h1>Let's Connect!</h1>
+        <p style="text-align: center; width: 100%; margin-top: -10px; margin-bottom: 30px; font-size: 1.1em;">
+            We're here to help you with your order, answer questions about our sustainable materials, or discuss custom designs.
+        </p>
+
+        <section class="contact-form-section">
+            <h2>Send Us a Message</h2>
+            
+            <form action="[YOUR_FORM_HANDLER_URL]" method="POST">
+                
+                <div class="form-group">
+                    <label for="topic">What can we help you with?</label>
+                    <select id="topic" name="topic" required>
+                        <option value="">-- Please Select --</option>
+                        <option value="Order Inquiry">Order Inquiry (Tracking, Modification, Cancellation)</option>
+                        <option value="Product Question">Product/Material Question</option>
+                        <option>Returns & Exchanges</option>
+                        <option>Wholesale/Bulk Order</option>
+                        <option>General Question</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Your Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>

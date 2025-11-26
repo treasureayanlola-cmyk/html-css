@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Cards - Teetee tote bags</title>
+    <style>
+        /* Minimal styling for clarity - move this to your CSS file! */
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; background-color: aliceblue; color:black; margin: 0; padding: 0; }
+        .container { width: 90%; max-width: 1200px; margin: 40px auto; padding: 20px; }
+        h1 { text-align: center; color: black; /* A tote-bag green color */ margin-bottom: 30px; }
+        .gift-card-intro { text-align: center; margin-bottom: 40px; padding: 20px; background-color: aliceblue; border-radius: 8px; }
+        .card-options { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 30px; }
+        .card-product { background-color: aliceblue; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center; max-width: 350px; flex-grow: 1; }
+        .card-product h2 { color: black; margin-top: 0; }
+        .card-product p { color: black; font-size: 1.1em; }
+        .amount-selector button { background-color: aliceblue; border: 1px solid black; padding: 10px 15px; margin: 5px; cursor: pointer; border-radius: 4px; font-weight: bold; }
+        .amount-selector button:hover { background-color: aliceblue; }
+        .buy-button { background-color: aliceblue; color: black; border: none; padding: 12px 25px; margin-top: 20px; text-decoration: none; display: inline-block; font-size: 1.2em; border-radius: 4px; cursor: pointer; transition: background-color 0.3s; }
+        .buy-button:hover { background-color: aliceblue; }
+        .faq-section { margin-top: 50px; border-top: 1px solid black; padding-top: 30px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <h1>The Perfect Gift: Teetee tote bags Gift Card</h1>
+
+        <section class="gift-card-intro">
+            <p>
+                Give the gift of choice and sustainability! Not sure which design they'll love? 
+                A **Teetee tote bags Gift Card** is the perfect solution for birthdays, holidays, or a simple 'thank you'.
+            </p>
+            <p><strong>Delivered instantly via email. Never expires. Totes easy!</strong></p>
+        </section>
+        
+        <section class="card-options">
+            
+            <div class="card-product" id="digital-card">
+                <img src="images/giftcard-digital.png" alt="Digital e-Gift Card Illustration" style="width: 100%; max-width: 200px; margin-bottom: 15px;">
+                <h2>Email e-Gift Card</h2>
+                <p>Delivered instantly to their inbox. Perfect for last-minute gifting!</p>
+                
+                <div class="amount-selector">
+                    <p>Select an amount:</p>
+                    <button data-value="25">25000 naira</button>
+                    <button data-value="50">50000 naira</button>
+                    <button data-value="75">75 naira</button>
+                    <button data-value="100">100 naira</button>
+                    </div>
+                
+                <a href="" class="buy-button">Purchase Digital Card</a>
+            </div>
+
+            <div class="card-product" id="physical-card">
+                <img src="images/giftcard-physical.png" alt="Physical Gift Card Photo" style="width: 100%; max-width: 200px; margin-bottom: 15px;">
+                <h2>Physical Gift Card</h2>
+                <p>A beautiful, credit-card sized card mailed to you or the recipient. (Shipping fees apply).</p>
+                
+                 <div class="amount-selector">
+                    <p>Select an amount:</p>
+                    <button data-value="50">50000 naira</button>
+                    <button data-value="100">100000 naira</button>
+                    <button data-value="150">150000 naira</button>
+                    <button data-value="200">200000 naira</button>
+                </div>
+                
+                <a href="" class="buy-button">Purchase Physical Card</a>
+            </div>
+
+        </section>
+
+        <section class="faq-section" >
+            <h2>Frequently Asked Questions</h2>
+            
+            <h3>How do I send the Gift Card?</h3>
+            <p>The digital gift card is sent immediately to the email address used during checkout. You can then forward it to the lucky recipient, or print it out!</p>
+            
+            <h3>Does the Gift Card expire?</h3>
+            <p>No, our gift cards never expire and do not have any service fees.</p>
+
+            <h3>Can a Gift Card be used for shipping?</h3>
+            <p>Yes, the gift card balance can be applied to both product costs and any associated shipping fees.</p>
+            
+            <h3>How do I check my Gift Card balance?</h3>
+            <p>
+                <a href="">Check your balance here</a> or contact our customer support team with your card code.
+            </p>
+        </section>
+
+        <footer>
+            <p style="text-align: center; margin-top: 40px;">&copy; 2025 Teetee tote bags.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

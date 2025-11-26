@@ -1,0 +1,31 @@
+.header{
+    position: absolute;
+    top:0 ;
+    left: 0;
+    width: 90vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: 400px; 
+}
+.form-group{
+    display: flex;
+    flex-direction: row;
+    margin-left: 250px;
+    gap: 100px;
+}
+.login-button{
+    display: flex;
+    flex-direction: row;
+    margin-left: 70px;
+}
+.form-container{
+
+}
+.form-input{
+    
+}
+body{
+    background-color: azure;
+}
