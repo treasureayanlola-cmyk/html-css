@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fruits</h1>
+    <input type="text" id="foodInput" placeholder="Enter any food">
+    <button onclick="addFood()">Add Food</button>
+
+    <ul id="foodList"></ul>
+
+    <script>
+        function addFood() {
+            let foodInput = document.getElementById("foodInput");
+            let foodList = document.getElementById("foodList");
+
+            let food = foodInput.value.trim();
+
+            if (food) {
+                let li = document.createElement("li");
+                li.textContent = food + " ";
+
+                
+                let deleteBtn = document.createElement("button");
+                deleteBtn.textContent = "Delete"
+                
+                deleteBtn.onclick = function () {
+                    foodList.removeChild(li);
+                };
+
+                li.appendChild(deleteBtn);
+                foodList.appendChild(li);
+
+                foodInput.value = "";
+            }
+        }
+    </script>
+</body>
+</html>

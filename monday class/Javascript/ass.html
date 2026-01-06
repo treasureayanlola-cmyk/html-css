@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+        let courses=[
+           {
+            subject:"Biology",
+            teacher:"Mrs.Ayodele"
+            },
+              {
+            subject:"Chemistry",
+            teacher:"Mr.Kehinde"
+            },
+              {
+            subject:"Physics",
+            teacher:"Mr.Adesanya"
+            },
+        ]
+        console.log("base courses",courses)
+        
+
+        function addCourse(){
+            let newCourse={
+                subject:document.getElementById('subject').value,
+                teacher:document.getElementById("teacher").value
+            }
+            courses.push(newCourse)
+            console.log("updated courses",courses)
+        }
+    </script>
+</body>
+</html>

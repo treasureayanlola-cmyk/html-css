@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+
+</head>
+<body >
+    <div >
+    <div  >
+            <label class="text-4xl" for="firstname">Firstname:</label>
+        <input id="firstname" class="rounded-3xl border-2 border-black p-2" type="text" placeholder="enter your Firstname">
+     </div>
+       >
+        <div  >
+            <label class="text-4xl" for="lastname">Lastname:</label>
+        <input id="lastname" class="rounded-3xl border-2 border-black p-2 "   type="text" placeholder="enter your lastname">
+        </div>
+        </div>
+    
+         <button onclick="displayName()">submit</button>
+        <p id="paragraph"></p>
+        <p id="parent"></p>
+    <script>
+        let heading=document.getElementById("paragraph")
+        let myLife=document.getElementById("parent")
+        let myName=document.getElementById("firstname")
+        let mySelf=document.getElementById("lastname")
+
+        function displayName(){
+            let nameToDisplay=myName.value
+            let nameToshow=mySelf.value
+            heading.innerHTML=nameToDisplay
+            myLife.innerHTML=nameToshow
+
+
+        }
+
+    </script>
+    
+</body>
+</html>

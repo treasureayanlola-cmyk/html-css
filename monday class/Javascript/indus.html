@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col">
+    <div class="flex flex-row text-center w-full ">
+        <p id="a" class="w-1/3 bg-blue-200 h-30 p-20 text-black">A=</p>
+        <P id="b" class="w-1/3 bg-blue-200 h-30 p-20 text-black">B=</P>
+        <P id="c" class="w-1/3 bg-blue-200 h-30 p-20 text-black">C=</P>
+    </div>
+   <span id="output" class="w-1/3 mx-auto bg-gray-200 h-30 p-20  text-black" >output=</span>
+    <script>
+    /**
+     * Calculates the discriminant (Delta) of a quadratic equation.
+     */
+    function calculateDiscriminant(a, b, c) {
+        return (b * b - 4 * a * c);
+    }
+
+    // 1. Define the input variables once.
+    let a = 7;
+    let b = 3;
+    let c = 6;
+
+    // 2. Perform the calculation using the function.
+    let output = calculateDiscriminant(a, b, c);
+
+    // 3. Log the result to the console.
+    console.log(`The output is: ${output}`); 
+    // Output: -159
+
+    // 4. Update the HTML elements (assuming they exist in the document).
+    // The use of 'if (element)' prevents errors if an element is missing.
+    let elementA = document.getElementById("a");
+    let elementB = document.getElementById("b");
+    let elementC = document.getElementById("c");
+    let outputspan = document.getElementById("output");
+
+    if (elementA) elementA.innerHTML = "A = " + a;
+    if (elementB) elementB.innerHTML = "B = " + b;
+    if (elementC) elementC.innerHTML = "C = " + c;
+    if (outputspan) outputspan.innerHTML = "output= " + output;
+
+</script>
+
+</body>
+</html>

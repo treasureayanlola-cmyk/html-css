@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="firstname" type="text" placeholder="Father's name">
+    <input id="middlename" type="text" placeholder="Mother's name ">
+    <input id="username" type="text" placeholder="son's name">
+    <input id="pass" type="text" placeholder="daughter's name">
+
+    <button onclick="displayName()">sign in</button>
+
+     <p id="paragraph"></p>
+        <p id="parent"></p>
+        <p id="patent"></p>
+        <p id="word"></p>
+    <script>
+        let love=document.getElementById("username")
+        let hear=document.getElementById("patent")
+        let heading=document.getElementById("paragraph")
+        let myLife=document.getElementById("parent")
+        let myName=document.getElementById("firstname")
+        let mySelf=document.getElementById("middlename")
+        let ummi=document.getElementById("pass")
+        let tee=document.getElementById("word")
+        function displayName(){
+            let nameToDisplay=myName.value
+            let nameToshow=mySelf.value
+            let nametosee=love.value
+            let nametolook=ummi.value
+            heading.innerHTML=nameToDisplay
+            myLife.innerHTML=nameToshow
+            hear.innerHTML=nametosee
+            tee.innerHTML=nametolook
+
+        }
+        let community=[
+            {
+                father:"Ayinla",
+                mother:"ayinke",
+                son:"Ayinde",
+                daughter:"Ajoke"
+            },
+            {
+                father:"Dada",
+                mother:"Daniella",
+                son:"David",
+                daughter:"Damisi"  
+            },
+             {
+                father:"bayo",
+                mother:"bambi",
+                son:"bolu",
+                daughter:"bashirat"  
+            },
+            {
+                father:"caleb",
+                mother:"cathrine",
+                son:"cain",
+                daughter:"caroline"  
+            }
+
+        ]
+         console.log(community)
+        </script>
+
+</body>
+</html>
